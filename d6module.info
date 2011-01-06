@@ -1,0 +1,6 @@
+; $Id $
+name = Name
+description = Description goes here
+core = 6.x
+version = "6.x-1.0"
+project = "Project Name"

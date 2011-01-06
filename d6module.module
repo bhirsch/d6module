@@ -1,0 +1,45 @@
+<?php
+/**
+ * @file
+ *  
+ */
+ 
+/**
+ * Implementation of hook_help()
+ */
+/*
+function d6module_help($path, $arg) {
+  if ($path == 'admin/help#d6module') {
+    $txt = 'Help text goes here.'
+    $output = t($txt);
+    return $output;
+  }
+}
+// */
+ 
+/**
+ * Implementation of hook_theme().
+ */
+/*
+function d6module_theme() {
+  return array(
+    'd6module_example' => array(
+      'arguments' => array('something' => NULL),
+    )
+  );
+}
+// */
+ 
+/**
+ * Implementation of theme function.
+ */
+/*
+function theme_d6module_example($something) {
+  $output = '';
+  // add stylesheet
+  $path = drupal_get_path('module', 'd6module');
+  drupal_add_css("$path/d6module.css");
+  // build $output 
+  return $output;
+}
+// */

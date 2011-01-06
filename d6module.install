@@ -1,0 +1,66 @@
+<?php 
+/**
+ * @file
+ *  Install module.
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+/*
+function d6module_install() {
+  drupal_install_schema('d6module');
+  // Set weight if necessary.
+  // db_query("UPDATE {system} SET weight = 1 WHERE name = 'd6module' ");
+}
+// */
+
+/**
+ * Implementation of hook_uninstall().
+ */
+/*
+function d6module_uninstall() {
+  drupal_uninstall_schema('d6module');
+}
+// */
+
+/**
+ * Implementation of hook_schema().
+ */
+/*
+function d6module_schema() {
+  $schema['d6module_table_name'] = array(
+    'fields' => array(
+      'field1' => array(
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'field2' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'default' => 0,
+        'not null' => TRUE,
+      ),
+      'field3' => array(
+        'type' => 'varchar',  // todo character v. varchar for primary key? 
+        'length' => 255,      // todo how long can these unique ids be? 
+        'not null' => TRUE, 
+        'default' => ''
+      ),
+    ),
+    'primary key' => array('field1'),
+  );
+
+  return $schema;
+}
+// */
+
+/**
+ * Implementation of hook_update_N.
+ */
+/*
+function d6module_update_6001() {
+  db_query("UPDATE {system} SET weight = 1 WHERE name = 'd6module' ");
+}
+// */
